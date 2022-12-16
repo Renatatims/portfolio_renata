@@ -1,0 +1,22 @@
+:root {
+    --pink: #e6a1ac;
+    --darkgrey:#3d3b3b;
+    --lightgrey:#574f4f;
+    --lightergrey:#645b5b;
+    --white:#dfe5eb;
+  }
+  /*Navigation*/
+  
+  .navigation {
+    overflow:hidden;
+       
+  }
+  
+  .navigation a {
+    float:left;
+    color: var(--pink);
+    padding:12px 15px;
+    text-decoration:none;
+    
+  }
+  
