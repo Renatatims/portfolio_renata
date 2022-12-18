@@ -1,3 +1,26 @@
+:root {
+    --pink: #e6a1ac;
+    --darkgrey:#3d3b3b;
+    --lightgrey:#574f4f;
+    --lightergrey:#645b5b;
+    --white:#dfe5eb;
+  }
+  /*Header*/
+  
+  header {
+    color: var(--white);
+    background-color: var(--darkgrey);
+    height:400px;
+      
+    
+  }
+  
+  /*h1 - Header*/
+  
+  .headerH1{
+    position:relative;
+  
+  }
 /*Profile Image*/
 
 #profilepic {

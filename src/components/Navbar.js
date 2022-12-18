@@ -4,63 +4,34 @@ import "../style/style.css";
 
 function Navbar() {
   return (
-    <nav class="navigation" id="nav">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#home">
-            home
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutme">
-            about me
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contact">
-            contact
-          </a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            data-bs-toggle="dropdown"
-            href="#projects"
-            role="button"
-            aria-expanded="false"
-          >
-            projects
-          </a>
-          <ul class="dropdown-menu">
-            <li>
-              <a class="dropdown-item" href="#project1">
-                Project 1
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#project2">
-                Project 2
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#project3">
-                Project 3
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#project4">
-                Project 4
-              </a>
-            </li>
-            <li>
-              <a class="dropdown-item" href="#project5">
-                Project 5
-              </a>
-            </li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+  <a class="navbar-brand" href="#nav">Home</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutMe">About me</a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-expanded="false">
+		Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="#project1">GitHelpNow!</a>
+          <a class="dropdown-item" href="#project2">AccountabiliBuddies</a>
+          <a class="dropdown-item" href="#project3">Weather Dashboard</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
   );
 }
 
