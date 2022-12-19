@@ -6,6 +6,7 @@ import About from "./About";
 import Footer from "./Footer";
 import Projects from "./Projects";
 
+
 export default function PortfolioPages() {
   const [currentPage, setCurrentPage] = useState('Home');
 
@@ -26,10 +27,10 @@ export default function PortfolioPages() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <div>
+    <body>
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
-    </div>
+    </body>
   );
 };

@@ -1,11 +1,11 @@
 import React from 'react';
-import '../style/style.css';
+import '../style/Footer.css';
 
 function Footer () {
     return (
        
 	<footer id="footer">
-		<h3> © Renata Rondon 2022 </h3>
+		<h5> © Renata Rondon 2022 </h5>
 	</footer>
  
     );

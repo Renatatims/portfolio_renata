@@ -7,24 +7,17 @@
   }
   /*Header*/
   
-  header {
+  #home {
     color: var(--white);
     background-color: var(--darkgrey);
     height:400px;
-      
-    
+    text-align: center;
   }
   
-  /*h1 - Header*/
-  
-  .headerH1{
-    position:relative;
-  
-  }
+
 /*Profile Image*/
 
 #profilepic {
     width:200px;
     height:220px; 
-   
   }

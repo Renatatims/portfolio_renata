@@ -7,11 +7,7 @@
   }
   /*Navigation*/
   
-  .navigation {
-    overflow:hidden;
-       
-  }
-  
+ 
   .navigation a {
     float:left;
     color: var(--pink);

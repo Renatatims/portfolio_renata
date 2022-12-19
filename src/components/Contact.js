@@ -1,6 +1,7 @@
 import React from 'react';
 import '../style/style.css';
 
+
 function Contact() {
     return (
         <section id="contact" class="section">

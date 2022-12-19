@@ -1,0 +1,14 @@
+/*Footer*/
+:root {
+    --pink: #e6a1ac;
+    --darkgrey:#3d3b3b;
+    --lightgrey:#574f4f;
+    --lightergrey:#645b5b;
+    --white:#dfe5eb;
+}
+
+footer {
+    font-size: 8px;
+    color: var(--lightgrey);
+    text-align: center;
+}
