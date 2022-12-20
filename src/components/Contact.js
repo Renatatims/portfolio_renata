@@ -17,15 +17,13 @@ function Contact() {
     
     const { name, email, message } = form;
     const [errorMessage, setErrorMessage] = useState('');
-
+   
     const handleFormSubmit = (e) => {
         e.preventDefault();
         if (!errorMessage) {
-            console.log(form);
-          }
-
+            console.log("Handle Form", form);
+        }    
     }
-
     const handleInputChange = (e) => {
         const { target } = e;
         const inputName= target.name;
@@ -46,7 +44,7 @@ function Contact() {
      }
      if (!errorMessage){
         setForm({...form, [inputName]: inputValue});
-        console.log(form);
+        //console.log(form);
      }
     };
 
@@ -60,21 +58,9 @@ function Contact() {
       <h3>Contact me:</h3>
       <form onSubmit={handleFormSubmit}>
         <div className="form-group">
-          <label htmlFor="email">Email address</label>
-          <input
-            value={email}
-            name="email"
-            type="email"
-            className="form-control"
-             onChange={handleInputChange}
-            id="email"
-            placeholder="name@example.com"
-          ></input>
-        </div>
-        <div className="form-group">
           <label htmlFor="name">Name</label>
           <input
-            value={name}
+            defaultValue={name}
             name="name"
             type="text"
             className="form-control"
@@ -84,9 +70,21 @@ function Contact() {
           ></input>
         </div>
         <div className="form-group">
+          <label htmlFor="email">Email address</label>
+          <input
+            defaultValue={email}
+            name="email"
+            type="email"
+            className="form-control"
+             onBlur={handleInputChange}
+            id="email"
+            placeholder="name@example.com"
+          ></input>
+        </div>
+        <div className="form-group">
           <label htmlFor="message">Message</label>
           <textarea
-            value={message}
+            defaultValue={message}
             name="message"
             type="text"
             className="form-control"
