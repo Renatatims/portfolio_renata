@@ -1,6 +1,14 @@
 .icons{
-    margin-left: 80px;
-    margin-right: 80px;
-    justify-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
     list-style:none;
+    display: inline;
    }
+.contact-icons {
+    text-align: center;
+}
+
+form {
+    margin-left: 10%;
+    margin-right: 10%;
+}
