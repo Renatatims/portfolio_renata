@@ -20,26 +20,35 @@ function Contact() {
 
     const handleFormSubmit = (e) => {
         e.preventDefault();
-        if (!validateEmail(email)) {
-          setErrorMessage('Email is invalid',{errorMessage});
-          return;
-        }
-        setForm('');
-        console.log("Info submitted!")
+        if (!errorMessage) {
+            console.log(form);
+          }
+
     }
 
     const handleInputChange = (e) => {
         const { target } = e;
-        const inputType = target.name;
+        const inputName= target.name;
         const inputValue = target.value;
-    if (inputType === 'email') {
-        setForm(inputValue);
-      } else if (!inputValue.length) {
-        setErrorMessage("Name is required");
+    if (inputName === 'email') {
+        if (!validateEmail(inputValue)){
+            setErrorMessage("Invalid email");
+        } else {
+            setErrorMessage('');
+        }
+       
       } else {
-        setErrorMessage('');
-      }
-    }
+        if (!inputValue.length) {
+            setErrorMessage("Name is required");
+          } else {
+            setErrorMessage('');
+      } 
+     }
+     if (!errorMessage){
+        setForm({...form, [inputName]: inputValue});
+        console.log(form);
+     }
+    };
 
   return (
     <section id="contact" className="section">
@@ -49,21 +58,21 @@ function Contact() {
       </h2>
       <div id="contact-line"></div>
       <h3>Contact me:</h3>
-      <form>
+      <form onSubmit={handleFormSubmit}>
         <div className="form-group">
-          <label for="email">Email address</label>
+          <label htmlFor="email">Email address</label>
           <input
             value={email}
             name="email"
             type="email"
             className="form-control"
-            onChange={handleInputChange}
+             onChange={handleInputChange}
             id="email"
             placeholder="name@example.com"
           ></input>
         </div>
-        <div class="form-group">
-          <label for="name">Name</label>
+        <div className="form-group">
+          <label htmlFor="name">Name</label>
           <input
             value={name}
             name="name"
@@ -74,8 +83,8 @@ function Contact() {
             placeholder="name"
           ></input>
         </div>
-        <div class="form-group">
-          <label for="message">Message</label>
+        <div className="form-group">
+          <label htmlFor="message">Message</label>
           <textarea
             value={message}
             name="message"
@@ -86,13 +95,14 @@ function Contact() {
             rows="3"
           ></textarea>
         </div>
-        <button type="submit" class="btn btn-secondary mb-2" onSubmit={handleFormSubmit}>Submit</button>
-      </form>
-      {errorMessage && (
+        {errorMessage && (
         <div>
           <p className="error-text">{errorMessage}</p>
         </div>
-      )}
+        )}
+        <button type="submit" className="btn btn-secondary mb-2">Submit</button>
+
+      </form>
       
       <ul className="contact-icons" >
         <li className="icons">
@@ -120,5 +130,4 @@ function Contact() {
     </section>
   );
 }
-
 export default Contact;
