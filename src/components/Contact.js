@@ -28,6 +28,18 @@ function Contact() {
         console.log("Info submitted!")
     }
 
+    const handleInputChange = (e) => {
+        const { target } = e;
+        const inputType = target.name;
+        const inputValue = target.value;
+    if (inputType === 'email') {
+        setForm(inputValue);
+      } else if (!inputValue.length) {
+        setErrorMessage("Name is required");
+      } else {
+        setErrorMessage('');
+      }
+    }
 
   return (
     <section id="contact" className="section">
@@ -45,6 +57,7 @@ function Contact() {
             name="email"
             type="email"
             className="form-control"
+            onChange={handleInputChange}
             id="email"
             placeholder="name@example.com"
           ></input>
@@ -56,6 +69,7 @@ function Contact() {
             name="name"
             type="text"
             className="form-control"
+            onChange={handleInputChange}
             id="name"
             placeholder="name"
           ></input>
@@ -67,12 +81,18 @@ function Contact() {
             name="message"
             type="text"
             className="form-control"
+            onChange={handleInputChange}
             id="message"
             rows="3"
           ></textarea>
         </div>
         <button type="submit" class="btn btn-secondary mb-2" onSubmit={handleFormSubmit}>Submit</button>
       </form>
+      {errorMessage && (
+        <div>
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
       
       <ul className="contact-icons" >
         <li className="icons">
@@ -100,4 +120,5 @@ function Contact() {
     </section>
   );
 }
+
 export default Contact;
