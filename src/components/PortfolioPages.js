@@ -27,10 +27,10 @@ export default function PortfolioPages() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
-    <body>
+    <div>
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       {renderPage()}
       <Footer />
-    </body>
+    </div>
   );
 };
