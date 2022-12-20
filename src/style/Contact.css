@@ -1,6 +1,9 @@
+.contact{
+    background-color:var(--darkgrey);
+    color:var(--white);
+}
 .icons{
-    margin-left: 20px;
-    margin-right: 20px;
+   
     list-style:none;
     display: inline;
    }

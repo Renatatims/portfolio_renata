@@ -49,7 +49,7 @@ function Contact() {
     };
 
   return (
-    <section id="contact" className="section">
+    <section className="contact">
       <h2 id="contact-name">
         {" "}
         <a href="#nav"> Renata Rondon </a>{" "}
@@ -101,7 +101,7 @@ function Contact() {
         <button type="submit" className="btn btn-secondary mb-2">Submit</button>
 
       </form>
-      
+      {/*
       <ul className="contact-icons" >
         <li className="icons">
           <a>
@@ -124,7 +124,7 @@ function Contact() {
           </a>
         </li>
       </ul>
-     
+        */}
     </section>
   );
 }
