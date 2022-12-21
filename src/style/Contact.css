@@ -1,6 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+
 .contact{
     background-color:var(--darkgrey);
     color:var(--white);
+    text-align: left;
+    font-family: 'Kanit', sans-serif;
+}
+h3{
+    margin-left: 5px;
 }
 .icons{
    
@@ -14,4 +21,8 @@
 form {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+.btn {
+    margin-top: 5px; 
 }

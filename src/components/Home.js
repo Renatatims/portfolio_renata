@@ -7,7 +7,7 @@ function Home() {
       
         <div className="headerH1 jumbotron" id="home">
             <h1 className="display-4"> Hello World, I am Renata Rondon </h1>
-            <p> Future <span id="web"><strong> Web Developer </strong> </span> </p>
+            <p> Future Web Developer</p>
             <img id="profilepic" src={require('../assets/images/Profile.png')} alt="profile Renata Rondon"></img>
         </div>
     

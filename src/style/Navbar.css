@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 :root {
     --pink: #e6a1ac;
     --darkgrey:#3d3b3b;
@@ -8,12 +9,16 @@
   /*Navigation*/
   
  
-  .navigation a {
-    float:left;
+  #navigationBar {
+    font-family: 'Kanit', sans-serif;
     color: var(--pink);
     padding:12px 15px;
     text-decoration:none;
     
+    
   }
 
+  #navElement {
+    color: var(--pink);
+  }
   

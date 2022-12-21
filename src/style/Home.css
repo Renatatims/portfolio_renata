@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 
 :root {
     --pink: #e6a1ac;
@@ -14,7 +14,7 @@
     background-color: var(--darkgrey);
     height:400px;
     text-align: center;
-    
+    font-family: 'Kanit', sans-serif;
     
   }
   

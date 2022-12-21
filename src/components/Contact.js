@@ -1,12 +1,8 @@
-//import React from 'react';
-//import ReactDOM from "react-dom";
 import React, { useState } from 'react';
 import "../style/Contact.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 //Helper to validate the user's email input
 import { validateEmail } from "../utils/helpers";
+import '../style/style.css';
 
 function Contact() {
     const [form, setForm] = useState({
@@ -50,12 +46,8 @@ function Contact() {
 
   return (
     <section className="contact">
-      <h2 id="contact-name">
-        {" "}
-        <a href="#nav"> Renata Rondon </a>{" "}
-      </h2>
       <div id="contact-line"></div>
-      <h3>Contact me:</h3>
+      <h3>Contact me :</h3>
       <form onSubmit={handleFormSubmit}>
         <div className="form-group">
           <label htmlFor="name">Name</label>
