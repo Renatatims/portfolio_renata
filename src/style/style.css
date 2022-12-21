@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
 /*Root tag*/
 
 :root {
@@ -9,11 +10,11 @@
 }
 
 body {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Kanit', sans-serif;
     color: var(--pink);
     font-size: 20px;
     text-align: center;
-    background-color:  var(--lightgrey);
+    background-color:  var(--darkgrey);
     padding: 0px;
     margin: 0px;
     

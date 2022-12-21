@@ -5,8 +5,8 @@ import "../style/Projects.css";
 function Projects() {
   return (
     <section className="container" id="projects">
-      <div className="row">
-        <div className="col">
+      <div className="row" id="projectsDiv">
+        <div className="col" id="projectCard">
           <div className="card" style={{ width: "30rem" }}>
             <img
               src={require("../assets/cardImages/card0Preview.PNG")}
@@ -20,7 +20,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="col">
+        <div className="col" id="projectCard">
           <div className="card" style={{ width: "30rem" }}>
             <img
               src={require("../assets/cardImages/card1Preview.PNG")}
@@ -34,7 +34,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="col">
+        <div className="col" id="projectCard">
           <div className="card" style={{ width: "30rem" }}>
             <img
               src={require("../assets/cardImages/card2Preview.PNG")}
@@ -48,7 +48,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="col">
+        <div className="col" id="projectCard">
           <div className="card" style={{ width: "30rem" }}>
             <img
               src={require("../assets/cardImages/card3Preview.PNG")}
@@ -62,7 +62,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="col">
+        <div className="col" id="projectCard">
           <div className="card" style={{ width: "30rem" }}>
             <img
               src={require("../assets/cardImages/card4Preview.PNG")}
@@ -76,7 +76,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="col">
+        <div className="col" id="projectCard">
           <div className="card" style={{ width: "30rem" }}>
             <img
               src={require("../assets/cardImages/card5Preview.PNG")}

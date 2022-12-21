@@ -1,4 +1,15 @@
 img {
     height: 350px;
-    margin:auto;    
+    margin:auto;
+      
+  }
+
+  #projectCard{
+    margin: 5px;
+    text-align: center;
+    
+  }
+
+  #projectsDiv{
+    text-align: center;
   }
