@@ -18,7 +18,9 @@ function Contact() {
         e.preventDefault();
         if (!errorMessage) {
             console.log("Handle Form", form);
-        }    
+            setErrorMessage("Message Sent!")
+        }   
+        //setForm (...(''));
     }
     const handleInputChange = (e) => {
         const { target } = e;
