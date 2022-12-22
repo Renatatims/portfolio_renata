@@ -18,7 +18,6 @@ function About() {
         src={require("../assets/images/Profile.png")}
         alt="profile Renata Rondon"
       ></img>
-      <p></p>
     </div>
   );
 }

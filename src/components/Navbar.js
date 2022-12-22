@@ -27,9 +27,10 @@ function Navbar2({currentPage, handlePageChange}) {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-left flex-grow-1 pe-3">
-                  <Nav.Link id = "navElement" href="#action1" onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>About Me</Nav.Link>
-                  <Nav.Link id = "navElement" href="#action2" onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</Nav.Link>
-                  <Nav.Link id = "navElement" href="#action2" onClick={() => handlePageChange('Project')} className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}>Projects</Nav.Link>
+                  <Nav.Link id = "navElement" href="#About" onClick={() => handlePageChange('About')} className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}>About Me</Nav.Link>
+                  <Nav.Link id = "navElement" href="#Contact" onClick={() => handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</Nav.Link>
+                  <Nav.Link id = "navElement" href="#Projects" onClick={() => handlePageChange('Projects')} className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Projects</Nav.Link>
+                  <Nav.Link id = "navElement" href="#Resume" onClick={() => handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
