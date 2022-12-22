@@ -13,26 +13,30 @@ function Contact() {
     
     const { name, email, message } = form;
     const [errorMessage, setErrorMessage] = useState('');
+
+    //Handle Form Submit - user input info can be seen in the console
    
     const handleFormSubmit = (e) => {
         e.preventDefault();
         if (!errorMessage) {
             console.log("Handle Form", form);
-            setErrorMessage("Message Sent!")
         }   
-        //setForm (...(''));
     }
+
+    // Handle Input Change function
     const handleInputChange = (e) => {
         const { target } = e;
         const inputName= target.name;
         const inputValue = target.value;
+
+    //Validate e-mail using helper with email Regex 
     if (inputName === 'email') {
         if (!validateEmail(inputValue)){
             setErrorMessage("Invalid email");
         } else {
             setErrorMessage('');
         }
-       
+    // Validate the name input - user must enter a name
       } else {
         if (!inputValue.length) {
             setErrorMessage("Name is required");
@@ -40,12 +44,15 @@ function Contact() {
             setErrorMessage('');
       } 
      }
+
+     //If there are no error messages, than info will be sent to setForm object
      if (!errorMessage){
         setForm({...form, [inputName]: inputValue});
         //console.log(form);
      }
     };
-
+    
+  //Contact Form:
   return (
     <section className="contact">
       <div id="contact-line"></div>
@@ -70,7 +77,7 @@ function Contact() {
             name="email"
             type="email"
             className="form-control"
-             onBlur={handleInputChange}
+            onBlur={handleInputChange}
             id="email"
             placeholder="name@example.com"
           ></input>
@@ -95,30 +102,6 @@ function Contact() {
         <button type="submit" className="btn btn-secondary mb-2">Submit</button>
 
       </form>
-      {/*
-      <ul className="contact-icons" >
-        <li className="icons">
-          <a>
-            <FontAwesomeIcon icon={faPhone} size="2x" />
-          </a>
-        </li>
-        <li className="icons">
-          <a href="https://github.com/Renatatims" target="_blank">
-            <FontAwesomeIcon icon={faEnvelope} size="2x" />
-          </a>
-        </li>
-        <li className="icons">
-          <a href="https://github.com/Renatatims" target="_blank">
-            <FontAwesomeIcon icon={faGithub} size="2x" />
-          </a>
-        </li>
-        <li className="icons">
-          <a href="https://www.linkedin.com/" target="_blank">
-            <FontAwesomeIcon icon={faLinkedin} size="2x" />
-          </a>
-        </li>
-      </ul>
-        */}
     </section>
   );
 }
