@@ -15,7 +15,7 @@ function Resume() {
       <Card bg="dark">
         <Card.Header as="h5">Resume</Card.Header>
         <Card.Body>
-          <Card.Title>Special title treatment</Card.Title>
+          <Card.Title>Renata Rondon</Card.Title>
           <Card.Text>Please checkout my resume on my linkedin page</Card.Text>
           <a
             href="https://www.linkedin.com/in/renata-tims-rondon-76a0618a/"
@@ -30,7 +30,6 @@ function Resume() {
         <Card bg="light">
           <Card.Body className="skillsCard">
             <Card.Title className="skillsTitle">Front-end Skills</Card.Title>
-            <Card.Text>
               <ul className="skills">
                 <li>HTML</li>
                 <li>CSS</li>
@@ -39,14 +38,12 @@ function Resume() {
                 <li>responsive design</li>
                 <li>React</li>
                 <li>Bootstrap</li>
-              </ul>
-            </Card.Text>
+              </ul>           
           </Card.Body>
         </Card>
         <Card bg="light">
           <Card.Body className="skillsCard">
-            <Card.Title className="skillsTitle">Back-end Skills</Card.Title>
-            <Card.Text>
+            <Card.Title className="skillsTitle">Back-end Skills</Card.Title>            
               <ul className="skills">
                 <li>APIs</li>
                 <li>Node</li>
@@ -55,8 +52,7 @@ function Resume() {
                 <li>MongoDB, Mongoose</li>
                 <li>REST</li>
                 <li>GraphQL</li>
-              </ul>
-            </Card.Text>
+              </ul>            
           </Card.Body>
         </Card>
       </CardGroup>
