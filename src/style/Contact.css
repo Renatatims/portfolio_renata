@@ -26,3 +26,13 @@ form {
 .btn {
     margin-top: 5px; 
 }
+
+#contactList {
+    width:fit-content;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+}
+#contactItem{
+    text-decoration: none;
+}

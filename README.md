@@ -4,7 +4,7 @@
 
 ## Highlights
 - Full-stack Web Developer
-- Currently enrolled enrolled at UC Berkeley Coding Bootcamp
+- Currently enrolled at UC Berkeley Coding Bootcamp
 - Bachelor's in Environmental Engineering
 - Work experience: 4 years as a Purchasing Manager at Lindblad Expeditions - National Geographic
 

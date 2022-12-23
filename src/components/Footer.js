@@ -9,12 +9,12 @@ function Footer() {
     <footer id="footer">
       <ul className="contact-icons">
         <li className="icons">
-          <a>
-            <FontAwesomeIcon icon={faPhone} size="5x" />
+          <a href="tel:2064714644">
+            <FontAwesomeIcon icon={faPhone} size="4x" />
           </a>
         </li>
         <li className="icons">
-          <a href="https://github.com/Renatatims" target="_blank">
+        <a href = "mailto: renatatims@gmail.com" target="_blank">
             <FontAwesomeIcon icon={faEnvelope} size="5x" />
           </a>
         </li>
@@ -24,7 +24,7 @@ function Footer() {
           </a>
         </li>
         <li className="icons">
-          <a href="https://www.linkedin.com/" target="_blank">
+        <a href="https://www.linkedin.com/in/renata-tims-rondon-76a0618a/" target="_blank">
             <FontAwesomeIcon icon={faLinkedin} size="5x" />
           </a>
         </li>

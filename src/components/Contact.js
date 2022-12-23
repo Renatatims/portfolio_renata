@@ -1,57 +1,61 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import "../style/Contact.css";
 //Helper to validate the user's email input
 import { validateEmail } from "../utils/helpers";
-import '../style/style.css';
+import "../style/style.css";
+// React-bootstrap
+
+import Card from "react-bootstrap/Card";
+import ListGroup from "react-bootstrap/ListGroup";
 
 function Contact() {
-    const [form, setForm] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
-    
-    const { name, email, message } = form;
-    const [errorMessage, setErrorMessage] = useState('');
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
 
-    //Handle Form Submit - user input info can be seen in the console
-   
-    const handleFormSubmit = (e) => {
-        e.preventDefault();
-        if (!errorMessage) {
-            console.log("Handle Form", form);
-        }   
+  const { name, email, message } = form;
+  const [errorMessage, setErrorMessage] = useState("");
+
+  //Handle Form Submit - user input info can be seen in the console
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+    if (!errorMessage) {
+      console.log("Handle Form", form);
+    }
+  };
+
+  // Handle Input Change function
+  const handleInputChange = (e) => {
+    const { target } = e;
+    const inputName = target.name;
+    const inputValue = target.value;
+
+    //Validate e-mail using helper with email Regex
+    if (inputName === "email") {
+      if (!validateEmail(inputValue)) {
+        setErrorMessage("Invalid email");
+      } else {
+        setErrorMessage("");
+      }
+      // Validate the name input - user must enter a name
+    } else {
+      if (!inputValue.length) {
+        setErrorMessage("Name is required");
+      } else {
+        setErrorMessage("");
+      }
     }
 
-    // Handle Input Change function
-    const handleInputChange = (e) => {
-        const { target } = e;
-        const inputName= target.name;
-        const inputValue = target.value;
+    //If there are no error messages, than info will be sent to setForm object
+    if (!errorMessage) {
+      setForm({ ...form, [inputName]: inputValue });
+      //console.log(form);
+    }
+  };
 
-    //Validate e-mail using helper with email Regex 
-    if (inputName === 'email') {
-        if (!validateEmail(inputValue)){
-            setErrorMessage("Invalid email");
-        } else {
-            setErrorMessage('');
-        }
-    // Validate the name input - user must enter a name
-      } else {
-        if (!inputValue.length) {
-            setErrorMessage("Name is required");
-          } else {
-            setErrorMessage('');
-      } 
-     }
-
-     //If there are no error messages, than info will be sent to setForm object
-     if (!errorMessage){
-        setForm({...form, [inputName]: inputValue});
-        //console.log(form);
-     }
-    };
-    
   //Contact Form:
   return (
     <section className="contact">
@@ -95,13 +99,22 @@ function Contact() {
           ></textarea>
         </div>
         {errorMessage && (
-        <div>
-          <p className="error-text">{errorMessage}</p>
-        </div>
+          <div>
+            <p className="error-text">{errorMessage}</p>
+          </div>
         )}
-        <button type="submit" className="btn btn-secondary mb-2">Submit</button>
-
+        <button type="submit" className="btn btn-secondary mb-2">
+          Submit
+        </button>
       </form>
+
+      <div id="contactList">
+      <ListGroup >
+      <a href="tel:2064714644" id="contactItem"><ListGroup.Item variant="dark">Phone: 206-471-4644</ListGroup.Item></a>
+      <a href = "mailto: renatatims@gmail.com" id="contactItem"><ListGroup.Item variant="dark" >Email: renatatims@gmail.com</ListGroup.Item></a>
+      </ListGroup>
+      </div>
+
     </section>
   );
 }
