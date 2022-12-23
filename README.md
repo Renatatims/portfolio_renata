@@ -9,7 +9,7 @@
 - Work experience: 4 years as a Purchasing Manager at Lindblad Expeditions - National Geographic
 
 ## Link to Portfolio:
-https://github.com/Renatatims/portfolio_renata
+
 
 ## Skills
 Front-end Skills
