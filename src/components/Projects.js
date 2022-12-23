@@ -22,9 +22,43 @@ function Projects() {
               >
                 GitHelpNOW!
               </a>
+              <a
+                id="overlay-text2"
+                href="https://github.com/Renatatims/GitHelpNOW"
+                target="_blank"
+              >
+                Github Repo 
+              </a>
             </div>
             <div className="card-body">
               <p className="card-text">GitHelpNOW!</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="col" id="projectCard">
+          <div className="card" style={{ width: "30rem" }}>
+            <img
+              src={require("../assets/cardImages/card5Preview.PNG")}
+              className="card-img-top"
+              alt="..."
+            ></img>
+            <div className="overlay-card">
+              <a
+                id="overlay-text1"
+                href="https://renata-jate-text-editor.herokuapp.com/"
+                target="_blank"
+              >
+                Text Editor JATE
+              </a>
+              <a
+                id="overlay-text2"
+                href="https://github.com/Renatatims/text_editor_pwa"
+                target="_blank"
+              > Github Repo </a>
+            </div>
+            <div className="card-body">
+              <p className="card-text">Text Editor JATE</p>
             </div>
           </div>
         </div>
@@ -66,6 +100,11 @@ function Projects() {
               >
                 Note Taker
               </a>
+              <a
+                id="overlay-text2"
+                href="https://github.com/Renatatims/note_taker"
+                target="_blank"
+              > Github Repo </a>
             </div>
             <div className="card-body">
               <p className="card-text">Note Taker</p>
@@ -88,6 +127,11 @@ function Projects() {
               >
                 Weather Dashboard
               </a>
+              <a
+                id="overlay-text2"
+                href="https://github.com/Renatatims/weather_dashboard"
+                target="_blank"
+              > Github Repo </a>
             </div>
             <div className="card-body">
               <p className="card-text">Weather Dashboard</p>
@@ -117,27 +161,7 @@ function Projects() {
           </div>
         </div>
 
-        <div className="col" id="projectCard">
-          <div className="card" style={{ width: "30rem" }}>
-            <img
-              src={require("../assets/cardImages/card5Preview.PNG")}
-              className="card-img-top"
-              alt="..."
-            ></img>
-            <div className="overlay-card">
-              <a
-                id="overlay-text1"
-                href="https://renata-jate-text-editor.herokuapp.com/"
-                target="_blank"
-              >
-                Text Editor JATE
-              </a>
-            </div>
-            <div className="card-body">
-              <p className="card-text">Text Editor JATE</p>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

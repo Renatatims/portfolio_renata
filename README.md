@@ -8,6 +8,8 @@
 - Bachelor's in Environmental Engineering
 - Work experience: 4 years as a Purchasing Manager at Lindblad Expeditions - National Geographic
 
+## Link to Portfolio:
+https://github.com/Renatatims/portfolio_renata
 
 ## Skills
 Front-end Skills
@@ -47,7 +49,7 @@ Back-end Skills
 
 ## Portfolio Preview:
 
- ![preview](assets/screenshots/preview.PNG "Preview Portfolio")
+ ![preview](/src/assets/images/preview.PNG "Preview Portfolio")
 
 ## Features:
 
