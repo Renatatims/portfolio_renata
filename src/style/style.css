@@ -1,22 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 /*Root tag*/
 
 :root {
-    --pink: #e6a1ac;
-    --darkgrey:#3d3b3b;
-    --lightgrey:#574f4f;
-    --lightergrey:#645b5b;
-    --white:#dfe5eb;
+  --pink: #e6a1ac;
+  --darkgrey: #3d3b3b;
+  --lightgrey: #574f4f;
+  --lightergrey: #645b5b;
+  --white: #dfe5eb;
 }
 
 body {
-    font-family: 'Kanit', sans-serif;
-    color: var(--pink);
-    font-size: 20px;
-    text-align: center;
-    background-color:  var(--darkgrey);
-    padding: 0px;
-    margin: 0px;
-    
+  font-family: "Kanit", sans-serif;
+  color: var(--pink);
+  font-size: 20px;
+  text-align: center;
+  background-color: var(--darkgrey);
+  padding: 0px;
+  margin: 0px;
 }
-   

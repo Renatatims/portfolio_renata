@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import Home from "./Home";
 import Navbar from "./Navbar";
 import Contact from "./Contact";
@@ -7,22 +7,22 @@ import Footer from "./Footer";
 import Projects from "./Projects";
 import Resume from "./Resume";
 
-
+//Switch in between Pages - Home, About Me, Contact, Projects and Resume
 export default function PortfolioPages() {
-  const [currentPage, setCurrentPage] = useState('Home');
+  const [currentPage, setCurrentPage] = useState("Home");
 
   //Method to check the currentPage value, depending on the tab selected it will render a specific page
   const renderPage = () => {
-    if (currentPage === 'Home') {
-        return <Home />;
-      }
-    if (currentPage === 'About') {
+    if (currentPage === "Home") {
+      return <Home />;
+    }
+    if (currentPage === "About") {
       return <About />;
     }
-    if (currentPage === 'Contact') {
+    if (currentPage === "Contact") {
       return <Contact />;
     }
-    if (currentPage === 'Projects') {
+    if (currentPage === "Projects") {
       return <Projects />;
     }
     return <Resume />;
@@ -37,4 +37,4 @@ export default function PortfolioPages() {
       <Footer />
     </div>
   );
-};
+}

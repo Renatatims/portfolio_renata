@@ -1,42 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 
 img {
-    height: 350px;
-    margin:auto;
-      
-  }
-
-  #projectCard{
-    margin: 5px;
-    text-align: center;
-    
-  }
-
-  #projectsDiv{
-    text-align: center;
-  }
-
-  .overlay-card {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height:100%;
-    width: 100%;
-    opacity:0;
-    transition: 0.5s ease;
-    background-color: var(--darkgrey);
-    
+  height: 350px;
+  margin: auto;
 }
 
-.card:hover .overlay-card{
-    opacity: 0.9;
+#projectCard {
+  margin: 5px;
+  text-align: center;
+}
+
+#projectsDiv {
+  text-align: center;
+}
+
+.overlay-card {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--darkgrey);
+}
+
+.card:hover .overlay-card {
+  opacity: 0.9;
 }
 
 #overlay-text1 {
-  font-family: 'Kanit', sans-serif;
-  position:absolute;
+  font-family: "Kanit", sans-serif;
+  position: absolute;
   color: var(--pink);
   top: 40%;
   bottom: 0;
@@ -45,7 +42,6 @@ img {
   text-decoration: none;
 }
 
-.card-text{
-  font-family: 'Kanit', sans-serif;
-
+.card-text {
+  font-family: "Kanit", sans-serif;
 }

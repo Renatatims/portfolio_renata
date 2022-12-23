@@ -4,6 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPhone, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
+// Footer - icons added using FontAwesome package
 function Footer() {
   return (
     <footer id="footer">
@@ -14,7 +15,7 @@ function Footer() {
           </a>
         </li>
         <li className="icons">
-        <a href = "mailto: renatatims@gmail.com" target="_blank">
+          <a href="mailto: renatatims@gmail.com" target="_blank">
             <FontAwesomeIcon icon={faEnvelope} size="5x" />
           </a>
         </li>
@@ -24,7 +25,10 @@ function Footer() {
           </a>
         </li>
         <li className="icons">
-        <a href="https://www.linkedin.com/in/renata-tims-rondon-76a0618a/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/renata-tims-rondon-76a0618a/"
+            target="_blank"
+          >
             <FontAwesomeIcon icon={faLinkedin} size="5x" />
           </a>
         </li>

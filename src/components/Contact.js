@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "../style/Contact.css";
+import "../style/style.css";
 //Helper to validate the user's email input
 import { validateEmail } from "../utils/helpers";
-import "../style/style.css";
 // React-bootstrap
-
-import Card from "react-bootstrap/Card";
 import ListGroup from "react-bootstrap/ListGroup";
 
 function Contact() {
@@ -56,7 +54,7 @@ function Contact() {
     }
   };
 
-  //Contact Form:
+  //Contact Form and contact info list:
   return (
     <section className="contact">
       <div id="contact-line"></div>
@@ -109,12 +107,17 @@ function Contact() {
       </form>
 
       <div id="contactList">
-      <ListGroup >
-      <a href="tel:2064714644" id="contactItem"><ListGroup.Item variant="dark">Phone: 206-471-4644</ListGroup.Item></a>
-      <a href = "mailto: renatatims@gmail.com" id="contactItem"><ListGroup.Item variant="dark" >Email: renatatims@gmail.com</ListGroup.Item></a>
-      </ListGroup>
+        <ListGroup>
+          <a href="tel:2064714644" id="contactItem">
+            <ListGroup.Item variant="dark">Phone: 206-471-4644</ListGroup.Item>
+          </a>
+          <a href="mailto: renatatims@gmail.com" id="contactItem">
+            <ListGroup.Item variant="dark">
+              Email: renatatims@gmail.com
+            </ListGroup.Item>
+          </a>
+        </ListGroup>
       </div>
-
     </section>
   );
 }

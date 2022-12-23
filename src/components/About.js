@@ -2,6 +2,7 @@ import React from "react";
 import "../style/style.css";
 import "../style/About.css";
 
+//About Me page
 function About() {
   return (
     <div className="aboutMe">
