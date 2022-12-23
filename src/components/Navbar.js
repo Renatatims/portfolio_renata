@@ -21,7 +21,7 @@ function Navbar2({currentPage, handlePageChange}) {
               placement="end"
             >
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
+                <Offcanvas.Title className = "sideNavTitle" id={`offcanvasNavbarLabel-expand-${expand}`}>
                   Renata Rondon
                 </Offcanvas.Title>
               </Offcanvas.Header>

@@ -18,7 +18,13 @@
     
   }
 
+  .sideNavTitle{
+    font-family: 'Kanit', sans-serif;
+  }
+  
   #navElement {
     color: var(--pink);
+    font-family: 'Kanit', sans-serif;
   }
+  
   
