@@ -73,10 +73,17 @@ function Projects() {
             <div className="overlay-card">
               <a
                 id="overlay-text1"
-                href="https://github.com/Renatatims/AccountabiliBuddies"
+                href="https://accountabili-buddies-app.herokuapp.com/"
                 target="_blank"
               >
                 AccountabiliBuddies
+              </a>
+              <a
+                id="overlay-text2"
+                href="https://github.com/Renatatims/AccountabiliBuddies"
+                target="_blank"
+              >
+                Github Repo
               </a>
             </div>
             <div className="card-body">
@@ -95,7 +102,7 @@ function Projects() {
             <div className="overlay-card">
               <a
                 id="overlay-text1"
-                href=" https://github.com/Renatatims/note_taker"
+                href=" https://renata-note-taker.herokuapp.com/"
                 target="_blank"
               >
                 Note Taker
