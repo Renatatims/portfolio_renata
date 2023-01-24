@@ -47,10 +47,6 @@ Back-end Skills
  - Phone number: 206-471-4644
  - Location: USA
 
-## Portfolio Preview:
-
- ![preview](/src/assets/images/preview.PNG "Preview Portfolio")
-
 ## Features:
 
 React portfolio
