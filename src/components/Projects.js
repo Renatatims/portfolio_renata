@@ -7,9 +7,12 @@ import "../style/Projects.css";
 function Projects() {
   //Modal - useState
   const [modalShow, setModalShow] = useState(false)
+  //Projects - useState
+  const [project, setProject] = useState({});
 
   //Open Modal
-  const handleOpenModal = () => {
+  const handleOpenModal = (title, description, technologies, appLink, gitHubUrl) => {
+    setProject({ title, description, technologies, appLink, gitHubUrl });
     setModalShow(true);
   };
 
@@ -28,7 +31,14 @@ function Projects() {
               className="card-img-top"
               alt="..."
             ></img>
-            <div className="overlay-card" onClick={() => handleOpenModal()}>
+            <div className="overlay-card" onClick={() => handleOpenModal(
+              "PhilanthroMe",
+              "A donation platform for non-profit organizations.",
+              "React App, MERN Application",
+              "https://philanthro-me.herokuapp.com/",
+              "https://github.com/Renatatims/philanthro-me"
+
+            )}>
               <a
                 id="overlay-text1"
                 href="https://philanthro-me.herokuapp.com/"
@@ -252,7 +262,14 @@ function Projects() {
           </div>
         </div>
       </div>
-      <ProjectModal show={modalShow} handleClose={handleCloseModal} />
+      <ProjectModal 
+      show={modalShow} 
+      handleClose={handleCloseModal}
+      title={project.title}
+      description={project.description}
+      technologies={project.technologies}
+      appLink={project.appLink}
+      gitHubUrl={project.gitHubUrl}/>
     </section>
   );
 }

@@ -9,15 +9,15 @@ function ProjectModal(props) {
     size="md" 
     centered>
       <Modal.Header closeButton>
-        <Modal.Title>Title</Modal.Title>
+        <Modal.Title>{props.title}</Modal.Title>
       </Modal.Header>
-      <Modal.Body>Description</Modal.Body>
-      <Modal.Body>Technologies</Modal.Body>
+      <Modal.Body>Description: {props.description} </Modal.Body>
+      <Modal.Body>Technologies: {props.technologies} </Modal.Body>
       <Modal.Footer>
-        <Button variant="primary" href="/" target="_blank">
+        <Button variant="primary" href={props.appLink} target="_blank">
           Visit App
         </Button>
-        <Button variant="primary" href="/" target="_blank">
+        <Button variant="primary" href={props.gitHubUrl} target="_blank">
           Github Repo
         </Button>
         <Button variant="secondary" onClick={props.handleClose}>
