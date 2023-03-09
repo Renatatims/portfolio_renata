@@ -4,14 +4,20 @@ img {
   height: 300px;
   margin: auto;
 }
-
-#projectCard {
-  padding:5px;
-  text-align: center;
+.card-img-top{
+  height: 100%;
+  width: 100%;
+  margin: auto;
 }
 
-#projectsDiv {
-  text-align: center;
+#projectCol {
+  padding:10px;
+  text-align: center; 
+}
+
+#projectCard {
+  height:100%; 
+  box-shadow: 0 1px 6px var(--darkgrey);
 }
 
 .overlay-card {
@@ -25,6 +31,7 @@ img {
   opacity: 0;
   transition: 0.5s ease;
   background-color: var(--darkgrey);
+  border-radius: 8px;
 }
 
 .card:hover .overlay-card {

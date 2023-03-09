@@ -36,7 +36,7 @@ function ProjectModal(props) {
         >
         <Image
           src={props.image}
-          style={{ margin: "10px" }}
+          style={{ margin: "10px", width: "90%"}}
         ></Image>
         </a>
         <a

@@ -33,11 +33,11 @@ function Projects() {
   return (
     <Container id="projects">
       {/*Projects Cards*/}
-      <Row xs={1} md={2} lg={3} id="projectsDiv">
+      <Row xs={1} md={2} lg={3}>
         {/*Project Map - get info from all projects and render in the following card format*/}
         {projectData.map((project, pkey) => (
-          <Col key={pkey} id="projectCard">
-            <Card>
+          <Col key={pkey} id="projectCol">
+            <Card id="projectCard">
               <img src={project.image} className="card-img-top" alt="..."></img>
               <div
                 className="overlay-card"
