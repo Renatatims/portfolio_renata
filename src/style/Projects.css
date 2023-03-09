@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
 
 img {
-  height: 350px;
+  height: 300px;
   margin: auto;
 }
 
 #projectCard {
-  margin: 5px;
+  padding:5px;
   text-align: center;
 }
 
@@ -40,6 +40,7 @@ img {
   left: 30%;
   font-size: 30px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 #overlay-text2 {
@@ -48,9 +49,10 @@ img {
   color: var(--white);
   top: 50%;
   bottom: 0;
-  left: 30%;
+  left: 35%;
   font-size: 25px;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .card-text {

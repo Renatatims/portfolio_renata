@@ -1,17 +1,25 @@
 import React, { useState } from "react";
 import ProjectModal from "./ProjectModal";
+import { Container, Row, Col, Card } from 'react-bootstrap';
 import "../style/style.css";
 import "../style/Projects.css";
 
 //Projects displayed in cards - overlay applied over cards - mobile friendly
 function Projects() {
   //Modal - useState
-  const [modalShow, setModalShow] = useState(false)
+  const [modalShow, setModalShow] = useState(false);
   //Projects - useState
   const [project, setProject] = useState({});
 
   //Open Modal
-  const handleOpenModal = (title, image, description, technologies, appLink, gitHubUrl) => {
+  const handleOpenModal = (
+    title,
+    image,
+    description,
+    technologies,
+    appLink,
+    gitHubUrl
+  ) => {
     setProject({ title, image, description, technologies, appLink, gitHubUrl });
     setModalShow(true);
   };
@@ -22,48 +30,44 @@ function Projects() {
   };
 
   return (
-    <section className="container" id="projects">
-      <div className="row" id="projectsDiv">
-        <div className="col" id="projectCard">
-          <div className="card" style={{ width: "30rem" }}>
+    <Container id="projects">
+
+      {/*Projects Cards*/}
+      <Row xs={1} md={2} lg={3} id="projectsDiv">
+
+        {/*Project 1*/}
+        <Col id="projectCard">
+          <Card >
             <img
               src={require("../assets/cardImages/card6Preview.PNG")}
               className="card-img-top"
               alt="..."
             ></img>
-            <div className="overlay-card" onClick={() => handleOpenModal(
-              "PhilanthroMe",
-              require("../assets/cardImages/card6Preview.PNG"),
-              "A donation platform for non-profit organizations.",
-              "React App, MERN Application",
-              "https://philanthro-me.herokuapp.com/",
-              "https://github.com/Renatatims/philanthro-me"
-
-            )}>
-              <a
-                id="overlay-text1"
-                href="https://philanthro-me.herokuapp.com/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                PhilanthroMe
-              </a>
-              <a
-                id="overlay-text2"
-                href="https://github.com/Renatatims/philanthro-me"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Github Repo 
-              </a>
+            <div
+              className="overlay-card"
+              onClick={() =>
+                handleOpenModal(
+                  "PhilanthroMe",
+                  require("../assets/cardImages/card6Preview.PNG"),
+                  "A donation platform for non-profit organizations.",
+                  "React App, MERN Application",
+                  "https://philanthro-me.herokuapp.com/",
+                  "https://github.com/Renatatims/philanthro-me"
+                )
+              }
+            >
+              <p id="overlay-text1">PhilanthroMe</p>
+              <p id="overlay-text2"> More info . . . </p>
             </div>
             <div className="card-body">
               <p className="card-text">PhilanthroMe</p>
             </div>
-          </div>
-        </div>
-        <div className="col" id="projectCard">
-          <div className="card" style={{ width: "30rem" }}>
+          </Card>
+        </Col>
+
+        {/*Project 2*/}
+        <Col id="projectCard">
+          <Card >
             <img
               src={require("../assets/cardImages/card0Preview.PNG")}
               className="card-img-top"
@@ -84,17 +88,18 @@ function Projects() {
                 target="_blank"
                 rel="noreferrer"
               >
-                Github Repo 
+                Github Repo
               </a>
             </div>
             <div className="card-body">
               <p className="card-text">GitHelpNOW!</p>
             </div>
-          </div>
-        </div>
+          </Card>
+        </Col>
 
-        <div className="col" id="projectCard">
-          <div className="card" style={{ width: "30rem" }}>
+        {/*Project 3*/}
+        <Col id="projectCard">
+          <Card >
             <img
               src={require("../assets/cardImages/card5Preview.PNG")}
               className="card-img-top"
@@ -114,16 +119,20 @@ function Projects() {
                 href="https://github.com/Renatatims/text_editor_pwa"
                 target="_blank"
                 rel="noreferrer"
-              > Github Repo </a>
+              >
+                {" "}
+                Github Repo{" "}
+              </a>
             </div>
             <div className="card-body">
               <p className="card-text">Text Editor JATE</p>
             </div>
-          </div>
-        </div>
+          </Card>
+        </Col>
 
-        <div className="col" id="projectCard">
-          <div className="card" style={{ width: "30rem" }}>
+        {/*Project 4*/}
+        <Col id="projectCard">
+          <Card >
             <img
               src={require("../assets/cardImages/card1Preview.PNG")}
               className="card-img-top"
@@ -150,11 +159,12 @@ function Projects() {
             <div className="card-body">
               <p className="card-text">AccountabiliBuddies</p>
             </div>
-          </div>
-        </div>
+          </Card>
+        </Col>
 
-        <div className="col" id="projectCard">
-          <div className="card" style={{ width: "30rem" }}>
+        {/*Project 5*/}
+        <Col id="projectCard">
+          <Card >
             <img
               src={require("../assets/cardImages/card2Preview.PNG")}
               className="card-img-top"
@@ -174,16 +184,20 @@ function Projects() {
                 href="https://github.com/Renatatims/note_taker"
                 target="_blank"
                 rel="noreferrer"
-              > Github Repo </a>
+              >
+                {" "}
+                Github Repo{" "}
+              </a>
             </div>
             <div className="card-body">
               <p className="card-text">Note Taker</p>
             </div>
-          </div>
-        </div>
+          </Card>
+        </Col>
 
-        <div className="col" id="projectCard">
-          <div className="card" style={{ width: "30rem" }}>
+        {/*Project 6*/}
+        <Col id="projectCard">
+          <Card >
             <img
               src={require("../assets/cardImages/card3Preview.PNG")}
               className="card-img-top"
@@ -203,16 +217,20 @@ function Projects() {
                 href="https://github.com/Renatatims/weather_dashboard"
                 target="_blank"
                 rel="noreferrer"
-              > Github Repo </a>
+              >
+                {" "}
+                Github Repo{" "}
+              </a>
             </div>
             <div className="card-body">
               <p className="card-text">Weather Dashboard</p>
             </div>
-          </div>
-        </div>
+          </Card>
+        </Col>
 
-        <div className="col" id="projectCard">
-          <div className="card" style={{ width: "30rem" }}>
+        {/*Project 7*/}
+        <Col id="projectCard">
+          <Card >
             <img
               src={require("../assets/cardImages/card7Preview.PNG")}
               className="card-img-top"
@@ -232,16 +250,20 @@ function Projects() {
                 href="https://github.com/Renatatims/book_search"
                 target="_blank"
                 rel="noreferrer"
-              > Github Repo </a>
+              >
+                {" "}
+                Github Repo{" "}
+              </a>
             </div>
             <div className="card-body">
               <p className="card-text">Book Search</p>
             </div>
-          </div>
-        </div>
+          </Card>
+        </Col>
 
-        <div className="col" id="projectCard">
-          <div className="card" style={{ width: "30rem" }}>
+        {/*Project 8*/}
+        <Col id="projectCard">
+          <Card >
             <img
               src={require("../assets/cardImages/card4Preview.PNG")}
               className="card-img-top"
@@ -260,19 +282,54 @@ function Projects() {
             <div className="card-body">
               <p className="card-text">Social Network API</p>
             </div>
-          </div>
-        </div>
-      </div>
-      <ProjectModal 
-      show={modalShow} 
-      handleClose={handleCloseModal}
-      title={project.title}
-      image={project.image}
-      description={project.description}
-      technologies={project.technologies}
-      appLink={project.appLink}
-      gitHubUrl={project.gitHubUrl}/>
-    </section>
+          </Card>
+        </Col>
+
+        {/*Project 1*/}
+        <Col id="projectCard">
+          <Card >
+            <img
+              src={require("../assets/cardImages/card6Preview.PNG")}
+              className="card-img-top"
+              alt="..."
+            ></img>
+            <div
+              className="overlay-card"
+              onClick={() =>
+                handleOpenModal(
+                  "PhilanthroMe",
+                  require("../assets/cardImages/card6Preview.PNG"),
+                  "A donation platform for non-profit organizations.",
+                  "React App, MERN Application",
+                  "https://philanthro-me.herokuapp.com/",
+                  "https://github.com/Renatatims/philanthro-me"
+                )
+              }
+            >
+              <p id="overlay-text1">PhilanthroMe</p>
+              <p id="overlay-text2"> More info . . . </p>
+            </div>
+            <div className="card-body">
+              <p className="card-text">PhilanthroMe</p>
+            </div>
+          </Card>
+        </Col>
+
+       </Row>
+
+      {/*Project Modal properties*/}
+      <ProjectModal
+        show={modalShow}
+        handleClose={handleCloseModal}
+        title={project.title}
+        image={project.image}
+        description={project.description}
+        technologies={project.technologies}
+        appLink={project.appLink}
+        gitHubUrl={project.gitHubUrl}
+      />
+   
+    </Container>
   );
 }
 export default Projects;
