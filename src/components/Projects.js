@@ -3,6 +3,7 @@ import ProjectModal from "./ProjectModal";
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import "../style/style.css";
 import "../style/Projects.css";
+import { projectData } from "../utils/projectsData";
 
 //Projects displayed in cards - overlay applied over cards - mobile friendly
 function Projects() {
@@ -31,9 +32,50 @@ function Projects() {
 
   return (
     <Container id="projects">
+    
+    {/*Projects Cards*/}
+    <Row xs={1} md={2} lg={3} id="projectsDiv"> 
+
+     {/*Project 1*/}
+     {projectData.map((project, pkey) => (
+     <Col key={pkey} id="projectCard">
+       <Card >
+         <img
+           src={project.image}
+           className="card-img-top"
+           alt="..."
+         ></img>
+         <div
+           className="overlay-card"
+           onClick={() =>
+             handleOpenModal(
+              `${project.title}`,
+              `${project.image}`,
+              `${project.description}`,
+              `${project.technologies}`,
+              `${project.appLink}`,
+              `${project.gitHubUrl}`,
+
+               "React App, MERN Application",
+               "https://philanthro-me.herokuapp.com/",
+               "https://github.com/Renatatims/philanthro-me"
+             )
+           }
+         >
+           <p id="overlay-text1">{project.title}</p>
+           <p id="overlay-text2"> More info . . . </p>
+         </div>
+         <div className="card-body">
+           <p className="card-text">{project.title}</p>
+         </div>
+       </Card>
+     </Col>
+      ))}
+     </Row>
 
       {/*Projects Cards*/}
       <Row xs={1} md={2} lg={3} id="projectsDiv">
+     
 
         {/*Project 1*/}
         <Col id="projectCard">
