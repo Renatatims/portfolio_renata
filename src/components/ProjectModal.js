@@ -1,23 +1,71 @@
 import React from "react";
 import { Modal, Button } from "react-bootstrap";
+import "../style/style.css";
+import "../style/Modal.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import Image from "react-bootstrap/Image";
 
 function ProjectModal(props) {
   return (
-    <Modal 
-    show={props.show} 
-    onHide={props.handleClose} 
-    size="md" 
-    centered>
+    <Modal show={props.show} onHide={props.handleClose} size="md" centered>
       <Modal.Header closeButton>
-        <Modal.Title>{props.title}</Modal.Title>
+        <Modal.Title>
+          <a
+            href={props.appLink}
+            target="_blank"
+            rel="noreferrer"
+            style={{ textDecoration: "none", color: "black" }}
+          >
+            {props.title}
+          </a>
+        </Modal.Title>
       </Modal.Header>
-      <Modal.Body>Description: {props.description} </Modal.Body>
-      <Modal.Body>Technologies: {props.technologies} </Modal.Body>
+      <Modal.Body className="text-center">
+      <a
+          href={props.appLink}
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            textDecoration: "none",
+            color: "black",
+            justifyContent: "center",
+            margin: "10px",
+          }}
+        >
+        <Image
+          src={require("../assets/cardImages/card6Preview.PNG")}
+          style={{ margin: "10px" }}
+        ></Image>
+        </a>
+        <a
+          href={props.gitHubUrl}
+          target="_blank"
+          rel="noreferrer"
+          style={{
+            textDecoration: "none",
+            color: "black",
+            justifyContent: "center",
+            margin: "10px",
+          }}
+        >
+          <FontAwesomeIcon icon={faGithub} size="2x" />
+        </a>
+      </Modal.Body>
+      <Modal.Body>
+        <span style={{ fontWeight: "bold" }}>Description:</span>
+        {props.description}
+      </Modal.Body>
+      <Modal.Body>
+        <span style={{ fontWeight: "bold" }}>Technologies:</span>
+        {props.technologies}
+      </Modal.Body>
+
       <Modal.Footer>
-        <Button variant="primary" href={props.appLink} target="_blank">
+        <Button id="modal-btn" href={props.appLink} target="_blank">
           Visit App
         </Button>
-        <Button variant="primary" href={props.gitHubUrl} target="_blank">
+        <Button id="modal-btn" href={props.gitHubUrl} target="_blank">
           Github Repo
         </Button>
         <Button variant="secondary" onClick={props.handleClose}>

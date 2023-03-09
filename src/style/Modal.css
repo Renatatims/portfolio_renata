@@ -1,0 +1,12 @@
+#modal-btn {
+    background-color: #d78a9d;
+    color: white;
+    border: none;
+    padding: 7px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #modal-btn:hover {
+    background-color: var(--pink)
+  }
