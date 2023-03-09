@@ -15,19 +15,20 @@ function Footer() {
           </a>
         </li>
         <li className="icons">
-          <a href="mailto: renatatims@gmail.com" target="_blank">
+          <a href="mailto: renatatims@gmail.com" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faEnvelope} size="5x" />
           </a>
         </li>
         <li className="icons">
-          <a href="https://github.com/Renatatims" target="_blank">
+          <a href="https://github.com/Renatatims" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faGithub} size="5x" />
           </a>
         </li>
         <li className="icons">
           <a
-            href="https://www.linkedin.com/in/renata-tims-rondon-76a0618a/"
+            href="https://www.linkedin.com/in/renata-tims-rondon/"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} size="5x" />
           </a>

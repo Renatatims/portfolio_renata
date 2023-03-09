@@ -18,8 +18,9 @@ function Resume() {
           <Card.Title>Renata Rondon</Card.Title>
           <Card.Text>Please checkout my resume on my linkedin page</Card.Text>
           <a
-            href="https://www.linkedin.com/in/renata-tims-rondon-76a0618a/"
+            href="https://www.linkedin.com/in/renata-tims-rondon/"
             target="_blank"
+            rel="noreferrer"
           >
             <FontAwesomeIcon icon={faLinkedin} size="5x" />
           </a>

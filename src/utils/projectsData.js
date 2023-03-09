@@ -13,7 +13,7 @@ export const projectData = [
   {
     title: "GitHelpNOW!",
     image: require("../assets/cardImages/card0Preview.PNG"),
-    description: "App to give or get help",
+    description: "GitHelpNow! application to either get help or give help with the most critical issues. ",
     technologies:
       "Javascript, Html, CSS, Google Maps API, Google Places API, Every.Org API",
     appLink: "https://renatatims.github.io/GitHelpNOW/index.html",
@@ -21,7 +21,7 @@ export const projectData = [
   },
   //Project 3
   {
-    title: "Text Editor JATE",
+    title: "Text Editor",
     image: require("../assets/cardImages/card5Preview.PNG"),
     description:
       "Full-stack application that meets the PWA criteria and functions both online and offline. Data is stored in the IndexedDB API.",
@@ -42,27 +42,44 @@ export const projectData = [
   },
   //Project 5
   {
+    title: "AWS-News",
+    image: require("../assets/cardImages/card4Preview.PNG"),
+    description:
+      "Application allows users to post messages and photos, using MongoDB, Express.js, React and Node.js - AWS cloud platform handles the storage and database",
+    technologies: "AWS, MongoDB, Express.js, React and Node.js",
+    appLink: "http://3.138.86.100/",
+    gitHubUrl: "https://github.com/Renatatims/aws-news",
+  },
+  //Project 6
+  {
+    title: "idCard-Corp C#",
+    image: require("../assets/cardImages/card8Preview.PNG"),
+    description: "Application generates employee ID Card badges using C#.",
+    technologies: "C#, dotnet, SKCanvas",
+    appLink: "https://github.com/Renatatims/idCard-corporate",
+    gitHubUrl: "https://github.com/Renatatims/idCard-corporate",
+  },
+  //Project 7
+  {
     title: "Note Taker",
     image: require("../assets/cardImages/card2Preview.PNG"),
     description:
       "This application enables the user to write and save notes, using Express.js back end.",
-    technologies:
-      "Node.js, JavaScript, CSS, HTML",
+    technologies: "Node.js, JavaScript, CSS, HTML",
     appLink: "https://renata-note-taker.herokuapp.com/",
     gitHubUrl: "https://github.com/Renatatims/note_taker",
   },
-  //Project 6
+  //Project 8
   {
     title: "WeatherDash",
     image: require("../assets/cardImages/card3Preview.PNG"),
     description:
       "App to check the weather through city search. Includes cities from all orver the the world",
-    technologies:
-      "Open Weather API, JavaScript, CSS, HTML",
+    technologies: "Open Weather API, JavaScript, CSS, HTML",
     appLink: "https://renatatims.github.io/weather_dashboard/",
     gitHubUrl: "https://github.com/Renatatims/weather_dashboard",
   },
-  //Project 7
+  //Project 9
   {
     title: "Book Search",
     image: require("../assets/cardImages/card7Preview.PNG"),
@@ -72,26 +89,5 @@ export const projectData = [
       "Google Books API, GraphQL built with Apollo Server, Javascript",
     appLink: "https://renata-book-search.herokuapp.com/",
     gitHubUrl: "https://github.com/Renatatims/book_search",
-  },
-  //Project 8
-  {
-    title: "Social Net API",
-    image: require("../assets/cardImages/card4Preview.PNG"),
-    description:
-      "Social network API that uses NoSQL database",
-    technologies:
-      "NoSQL database, Mongoose, Javascript",
-    appLink: "https://github.com/Renatatims/social_networkAPI/",
-    gitHubUrl: "https://github.com/Renatatims/social_networkAPI",
-  },
-   //Project 1
-   {
-    title: "PhilanthroMe",
-    image: require("../assets/cardImages/card6Preview.PNG"),
-    description: "A donation platform for non-profit organizations.",
-    technologies:
-      "React App, MERN Application, Tailwind, Apollo server, grapghQl, Mongoose",
-    appLink: "https://philanthro-me.herokuapp.com/",
-    gitHubUrl: "https://github.com/Renatatims/philanthro-me",
   },
 ];
