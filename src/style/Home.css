@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+
+:root {
+  --pink: #e6a1ac;
+  --darkgrey: #3d3b3b;
+  --lightgrey: #574f4f;
+  --lightergrey: #645b5b;
+  --white: #dfe5eb;
+}
+/*Header*/
+
+#home {
+  color: var(--white);
+  background-color: var(--darkgrey);
+  height: 500px;
+  text-align: center;
+  font-family: "Kanit", sans-serif;
+}
+
+/*Profile Image*/
+
+#profilepic {
+  width: 200px;
+  height: 220px;
+}

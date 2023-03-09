@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+.aboutMe {
+  background-color: var(--darkgrey);
+  font-family: "Kanit", sans-serif;
+  color: var(--white);
+  padding: 20px;
+}
+
+#aboutText {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 18px;
+  justify-content: left;
+}
+
+#profilepic {
+  display: flex;
+}
+.skillsCard {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.skills {
+  list-style: none;
+  color: var(--darkgrey);
+}
+
+.skillsTitle {
+  color: var(--darkgrey);
+}
+
+.cardGroup {
+  background-color: var(--lightergrey);
+}
