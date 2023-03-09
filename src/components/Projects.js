@@ -1,20 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
+import ProjectModal from "./ProjectModal";
 import "../style/style.css";
 import "../style/Projects.css";
 
 //Projects displayed in cards - overlay applied over cards - mobile friendly
 function Projects() {
+  //Modal - useState
+  const [modalShow, setModalShow] = useState(false)
+
+  //Open Modal
+  const handleOpenModal = () => {
+    setModalShow(true);
+  };
+
+  //Close Modal
+  const handleCloseModal = () => {
+    setModalShow(false);
+  };
+
   return (
     <section className="container" id="projects">
       <div className="row" id="projectsDiv">
-      <div className="col" id="projectCard">
+        <div className="col" id="projectCard">
           <div className="card" style={{ width: "30rem" }}>
             <img
               src={require("../assets/cardImages/card6Preview.PNG")}
               className="card-img-top"
               alt="..."
             ></img>
-            <div className="overlay-card">
+            <div className="overlay-card" onClick={() => handleOpenModal()}>
               <a
                 id="overlay-text1"
                 href="https://philanthro-me.herokuapp.com/"
@@ -237,9 +251,8 @@ function Projects() {
             </div>
           </div>
         </div>
-
-        
       </div>
+      <ProjectModal show={modalShow} handleClose={handleCloseModal} />
     </section>
   );
 }
