@@ -7,6 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import Image from "react-bootstrap/Image";
 
 function ProjectModal(props) {
+    console.log(props);
   return (
     <Modal show={props.show} onHide={props.handleClose} size="md" centered>
       <Modal.Header closeButton>
@@ -34,7 +35,7 @@ function ProjectModal(props) {
           }}
         >
         <Image
-          src={require("../assets/cardImages/card6Preview.PNG")}
+          src={props.image}
           style={{ margin: "10px" }}
         ></Image>
         </a>

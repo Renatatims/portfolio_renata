@@ -11,8 +11,8 @@ function Projects() {
   const [project, setProject] = useState({});
 
   //Open Modal
-  const handleOpenModal = (title, description, technologies, appLink, gitHubUrl) => {
-    setProject({ title, description, technologies, appLink, gitHubUrl });
+  const handleOpenModal = (title, image, description, technologies, appLink, gitHubUrl) => {
+    setProject({ title, image, description, technologies, appLink, gitHubUrl });
     setModalShow(true);
   };
 
@@ -33,6 +33,7 @@ function Projects() {
             ></img>
             <div className="overlay-card" onClick={() => handleOpenModal(
               "PhilanthroMe",
+              require("../assets/cardImages/card6Preview.PNG"),
               "A donation platform for non-profit organizations.",
               "React App, MERN Application",
               "https://philanthro-me.herokuapp.com/",
@@ -266,6 +267,7 @@ function Projects() {
       show={modalShow} 
       handleClose={handleCloseModal}
       title={project.title}
+      image={project.image}
       description={project.description}
       technologies={project.technologies}
       appLink={project.appLink}
