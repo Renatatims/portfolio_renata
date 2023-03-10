@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/portfolio_renata/static/css/main.63db3947.css",
-    "main.js": "/portfolio_renata/static/js/main.238a748e.js",
+    "main.css": "/portfolio_renata/static/css/main.e63a553a.css",
+    "main.js": "/portfolio_renata/static/js/main.afb4df9c.js",
     "static/js/787.6a2e73cc.chunk.js": "/portfolio_renata/static/js/787.6a2e73cc.chunk.js",
     "static/media/Profile.png": "/portfolio_renata/static/media/Profile.8fcbe48e3bdaf4b3364a.png",
     "static/media/card7Preview.PNG": "/portfolio_renata/static/media/card7Preview.0ef7c3a8a6d21a8b87cc.PNG",
+    "static/media/card8Preview.PNG": "/portfolio_renata/static/media/card8Preview.d178f7f71f91d927cf18.PNG",
     "static/media/card6Preview.PNG": "/portfolio_renata/static/media/card6Preview.7be1863628fcabd5bd22.PNG",
-    "static/media/card4Preview.PNG": "/portfolio_renata/static/media/card4Preview.341ae9728f5d3b15a723.PNG",
+    "static/media/card4Preview.PNG": "/portfolio_renata/static/media/card4Preview.169c31eb62973ba8ca31.PNG",
     "static/media/card0Preview.PNG": "/portfolio_renata/static/media/card0Preview.325b16c5541d0348e29a.PNG",
     "static/media/card3Preview.PNG": "/portfolio_renata/static/media/card3Preview.0c752bd7b80322176754.PNG",
     "static/media/card1Preview.PNG": "/portfolio_renata/static/media/card1Preview.e9c599a2e14c3e9ccd9a.PNG",
     "static/media/card2Preview.PNG": "/portfolio_renata/static/media/card2Preview.2ade1777d5e0899b2402.PNG",
     "static/media/card5Preview.PNG": "/portfolio_renata/static/media/card5Preview.bc46bff13ec388ab4f8a.PNG",
     "index.html": "/portfolio_renata/index.html",
-    "main.63db3947.css.map": "/portfolio_renata/static/css/main.63db3947.css.map",
-    "main.238a748e.js.map": "/portfolio_renata/static/js/main.238a748e.js.map",
+    "main.e63a553a.css.map": "/portfolio_renata/static/css/main.e63a553a.css.map",
+    "main.afb4df9c.js.map": "/portfolio_renata/static/js/main.afb4df9c.js.map",
     "787.6a2e73cc.chunk.js.map": "/portfolio_renata/static/js/787.6a2e73cc.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.63db3947.css",
-    "static/js/main.238a748e.js"
+    "static/css/main.e63a553a.css",
+    "static/js/main.afb4df9c.js"
   ]
 }
