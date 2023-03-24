@@ -36,7 +36,10 @@ function NavigationBar({ currentPage, handlePageChange }) {
             >
               Home
             </Navbar.Brand>
-            <Navbar.Toggle onClick={toggleNavbar} aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle
+              onClick={toggleNavbar}
+              aria-controls={`offcanvasNavbar-expand-${expand}`}
+            />
             <Navbar.Offcanvas
               show={show}
               onHide={toggleNavbar}
@@ -50,10 +53,11 @@ function NavigationBar({ currentPage, handlePageChange }) {
                   id={`offcanvasNavbarLabel-expand-${expand}`}
                 >
                   <Nav.Link
-                    href="/"
-                    onClick={() => 
-                      toggleNavbar()
-                    }
+                    href="#home"
+                    onClick={() => {
+                      handlePageChange("Home");
+                      toggleNavbar();
+                    }}
                     className={
                       currentPage === "About" ? "nav-link active" : "nav-link"
                     }
