@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio_renata/static/css/main.e63a553a.css",
-    "main.js": "/portfolio_renata/static/js/main.afb4df9c.js",
+    "main.js": "/portfolio_renata/static/js/main.d3dc60c0.js",
     "static/js/787.6a2e73cc.chunk.js": "/portfolio_renata/static/js/787.6a2e73cc.chunk.js",
     "static/media/Profile.png": "/portfolio_renata/static/media/Profile.8fcbe48e3bdaf4b3364a.png",
     "static/media/card7Preview.PNG": "/portfolio_renata/static/media/card7Preview.0ef7c3a8a6d21a8b87cc.PNG",
@@ -15,11 +15,11 @@
     "static/media/card5Preview.PNG": "/portfolio_renata/static/media/card5Preview.bc46bff13ec388ab4f8a.PNG",
     "index.html": "/portfolio_renata/index.html",
     "main.e63a553a.css.map": "/portfolio_renata/static/css/main.e63a553a.css.map",
-    "main.afb4df9c.js.map": "/portfolio_renata/static/js/main.afb4df9c.js.map",
+    "main.d3dc60c0.js.map": "/portfolio_renata/static/js/main.d3dc60c0.js.map",
     "787.6a2e73cc.chunk.js.map": "/portfolio_renata/static/js/787.6a2e73cc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e63a553a.css",
-    "static/js/main.afb4df9c.js"
+    "static/js/main.d3dc60c0.js"
   ]
 }
