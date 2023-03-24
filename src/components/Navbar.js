@@ -49,7 +49,17 @@ function NavigationBar({ currentPage, handlePageChange }) {
                   className="sideNavTitle"
                   id={`offcanvasNavbarLabel-expand-${expand}`}
                 >
-                  Renata Rondon
+                  <Nav.Link
+                    href="/"
+                    onClick={() => 
+                      toggleNavbar()
+                    }
+                    className={
+                      currentPage === "About" ? "nav-link active" : "nav-link"
+                    }
+                  >
+                    Renata Rondon
+                  </Nav.Link>
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
