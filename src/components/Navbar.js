@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react"; // import state
 import "../style/Navbar.css";
 import "../style/style.css";
 //import Navbar elements from react-bootstrap
@@ -11,6 +12,11 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 //Hamburguer menu available for mobile - left side navigation
 
 function NavigationBar({ currentPage, handlePageChange }) {
+  const [show, setShow] = useState(false);
+
+  function toggleNavbar() {
+    setShow(!show);
+  }
   return (
     <>
       {["md"].map((expand) => (
@@ -30,8 +36,10 @@ function NavigationBar({ currentPage, handlePageChange }) {
             >
               Home
             </Navbar.Brand>
-            <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
+            <Navbar.Toggle onClick={toggleNavbar} aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
+              show={show}
+              onHide={toggleNavbar}
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
@@ -49,7 +57,10 @@ function NavigationBar({ currentPage, handlePageChange }) {
                   <Nav.Link
                     id="navElement"
                     href="#About"
-                    onClick={() => handlePageChange("About")}
+                    onClick={() => {
+                      handlePageChange("About");
+                      toggleNavbar();
+                    }}
                     className={
                       currentPage === "About" ? "nav-link active" : "nav-link"
                     }
@@ -59,7 +70,10 @@ function NavigationBar({ currentPage, handlePageChange }) {
                   <Nav.Link
                     id="navElement"
                     href="#Contact"
-                    onClick={() => handlePageChange("Contact")}
+                    onClick={() => {
+                      handlePageChange("Contact");
+                      toggleNavbar();
+                    }}
                     className={
                       currentPage === "Contact" ? "nav-link active" : "nav-link"
                     }
@@ -69,7 +83,10 @@ function NavigationBar({ currentPage, handlePageChange }) {
                   <Nav.Link
                     id="navElement"
                     href="#Projects"
-                    onClick={() => handlePageChange("Projects")}
+                    onClick={() => {
+                      handlePageChange("Projects");
+                      toggleNavbar();
+                    }}
                     className={
                       currentPage === "Projects"
                         ? "nav-link active"
@@ -81,7 +98,10 @@ function NavigationBar({ currentPage, handlePageChange }) {
                   <Nav.Link
                     id="navElement"
                     href="#Resume"
-                    onClick={() => handlePageChange("Resume")}
+                    onClick={() => {
+                      handlePageChange("Resume");
+                      toggleNavbar();
+                    }}
                     className={
                       currentPage === "Resume" ? "nav-link active" : "nav-link"
                     }
