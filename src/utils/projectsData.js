@@ -11,15 +11,26 @@ export const projectData = [
   },
   //Project 2
   {
+    title: "story-maker-AI",
+    image: require("../assets/cardImages/card9Preview.PNG"),
+    description: "This application enables the user to create storys based on their input, through openAI API and generate personalized images using Dall-e",
+    technologies:
+      "React App, MERN Application, Material UI, Apollo server, grapghQl, Mongoose",
+    appLink: "https://story-maker-ai.herokuapp.com/",
+    gitHubUrl: "https://github.com/Renatatims/story-maker-AI",
+  },
+  //Project 3
+  {
     title: "GitHelpNOW!",
     image: require("../assets/cardImages/card0Preview.PNG"),
-    description: "GitHelpNow! application to either get help or give help with the most critical issues. ",
+    description:
+      "GitHelpNow! application to either get help or give help with the most critical issues. ",
     technologies:
       "Javascript, Html, CSS, Google Maps API, Google Places API, Every.Org API",
     appLink: "https://renatatims.github.io/GitHelpNOW/index.html",
     gitHubUrl: "https://github.com/Renatatims/GitHelpNOW",
   },
-  //Project 3
+  //Project 4
   {
     title: "Text Editor",
     image: require("../assets/cardImages/card5Preview.PNG"),
@@ -29,7 +40,7 @@ export const projectData = [
     appLink: "https://renata-jate-text-editor.herokuapp.com/",
     gitHubUrl: "https://github.com/Renatatims/text_editor_pwa",
   },
-  //Project 4
+  //Project 5
   {
     title: "AccountBud",
     image: require("../assets/cardImages/card1Preview.PNG"),
@@ -40,7 +51,7 @@ export const projectData = [
     appLink: "https://accountabili-buddies-app.herokuapp.com/",
     gitHubUrl: "https://github.com/Renatatims/AccountabiliBuddies",
   },
-  //Project 5
+  //Project 6
   {
     title: "AWS-News",
     image: require("../assets/cardImages/card4Preview.PNG"),
@@ -50,7 +61,7 @@ export const projectData = [
     appLink: "http://3.138.86.100/",
     gitHubUrl: "https://github.com/Renatatims/aws-news",
   },
-  //Project 6
+  //Project 7
   {
     title: "idCard-Corp C#",
     image: require("../assets/cardImages/card8Preview.PNG"),
@@ -59,7 +70,7 @@ export const projectData = [
     appLink: "https://github.com/Renatatims/idCard-corporate",
     gitHubUrl: "https://github.com/Renatatims/idCard-corporate",
   },
-  //Project 7
+  //Project 8
   {
     title: "Note Taker",
     image: require("../assets/cardImages/card2Preview.PNG"),
@@ -69,7 +80,7 @@ export const projectData = [
     appLink: "https://renata-note-taker.herokuapp.com/",
     gitHubUrl: "https://github.com/Renatatims/note_taker",
   },
-  //Project 8
+  //Project 9
   {
     title: "WeatherDash",
     image: require("../assets/cardImages/card3Preview.PNG"),
@@ -79,6 +90,7 @@ export const projectData = [
     appLink: "https://renatatims.github.io/weather_dashboard/",
     gitHubUrl: "https://github.com/Renatatims/weather_dashboard",
   },
+  /*
   //Project 9
   {
     title: "Book Search",
@@ -90,4 +102,5 @@ export const projectData = [
     appLink: "https://renata-book-search.herokuapp.com/",
     gitHubUrl: "https://github.com/Renatatims/book_search",
   },
+  */
 ];
