@@ -23,3 +23,7 @@
   color: var(--pink);
   font-family: "Kanit", sans-serif;
 }
+
+#navElement:hover {
+  color: var(--lightergrey);  
+}

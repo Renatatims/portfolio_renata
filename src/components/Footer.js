@@ -34,7 +34,7 @@ function Footer() {
           </a>
         </li>
       </ul>
-      <h5> © Renata Rondon 2022 </h5>
+      <h5> © Renata Rondon 2023 </h5>
     </footer>
   );
 }
