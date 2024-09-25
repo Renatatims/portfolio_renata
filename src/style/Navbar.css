@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+:root {
+  --pink: #e6a1ac;
+  --darkgrey: #3d3b3b;
+  --lightgrey: #574f4f;
+  --lightergrey: #645b5b;
+  --white: #dfe5eb;
+}
+/*Navigation*/
+
+#navigationBar {
+  font-family: "Kanit", sans-serif;
+  color: var(--pink);
+  padding: 12px 15px;
+  text-decoration: none;
+}
+
+.sideNavTitle {
+  font-family: "Kanit", sans-serif;
+}
+
+#navElement {
+  color: var(--pink);
+  font-family: "Kanit", sans-serif;
+}
+
+#navElement:hover {
+  color: var(--lightergrey);  
+}
